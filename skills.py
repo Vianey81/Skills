@@ -53,8 +53,10 @@ def print_indexes(my_list):
         2 Volvo
 
     """
+    # for item in range(0, len(my_list)):
+    #     print "{0} {1}".format(item, my_list[item])
 
-    print "Nothing at all"
+    print '\n'.join([str(index) + " " + my_list[index] for index in range(0, len(my_list))])
 
 
 def long_words(word_list):
