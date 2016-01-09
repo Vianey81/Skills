@@ -16,7 +16,6 @@ def all_odd(number_list):
     """
     odd_list = [number for number in number_list if number % 2 != 0]
 
-
     return odd_list
 
 
@@ -30,8 +29,9 @@ def all_even(number_list):
         []
 
     """
+    even_list = [number for number in number_list if number % 2 == 0]
 
-    return ['the wrong thing']
+    return even_list
 
 
 def print_indexes(my_list):
