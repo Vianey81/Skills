@@ -194,7 +194,13 @@ def mult_numbers(number_list):
 
     """
 
-    return None
+    if len(number_list) > 0:
+        total = number_list[0]
+        for num in number_list[1:]:
+            total *= num
+        return total
+    else:
+        return 1
 
 
 def join_strings(word_list):
