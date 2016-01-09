@@ -94,7 +94,11 @@ def smallest_int(number_list):
 
     """
 
-    return 100
+    if len(number_list) > 1:
+        numbers = sorted([int(number) for number in number_list])
+        return numbers[0]
+    else:
+        return None
 
 
 def largest_int(number_list):
