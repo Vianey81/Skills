@@ -118,7 +118,11 @@ def largest_int(number_list):
         True
 
     """
-
+    if len(number_list) > 1:
+        numbers = sorted([int(number) for number in number_list])
+        return numbers[-1]
+    else:
+        return None
     return 0
 
 
