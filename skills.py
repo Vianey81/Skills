@@ -69,8 +69,9 @@ def long_words(word_list):
         []
 
     """
+    all_long_words = [word for word in word_list if len(word) > 4]
 
-    return ['the wrong thing']
+    return all_long_words
 
 
 def smallest_int(number_list):
