@@ -218,8 +218,11 @@ def join_strings(word_list):
         ''
 
     """
+    all_words = ""
+    for word in word_list:
+        all_words += word
 
-    return "Not the right thing"
+    return all_words
 
 
 def average(number_list):
@@ -231,8 +234,11 @@ def average(number_list):
     There is no defined answer if the list given is empty. It's fine if
     this raises an error when given an empty list.
     """
+    total = 0
 
-    return 0
+    for num in number_list:
+        total += float(num)
+    return total / len(number_list)
 
 
 def join_strings_with_comma(list_of_words):
@@ -249,7 +255,12 @@ def join_strings_with_comma(list_of_words):
 
     """
 
-    return ""
+    all_words = ""
+
+    for word in list_of_words:
+            all_words += word + ', '
+
+    return all_words[:-2]
 
 
 ##############################################################################
