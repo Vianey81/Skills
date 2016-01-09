@@ -168,8 +168,11 @@ def sum_numbers(number_list):
         0
 
     """
+    total = 0
+    for num in number_list:
+        total += num
 
-    return None
+    return total
 
 
 def mult_numbers(number_list):
